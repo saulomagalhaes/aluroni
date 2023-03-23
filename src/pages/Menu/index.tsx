@@ -1,6 +1,7 @@
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import { useState } from 'react';
 import Filters from './Filters';
+import Items from './Items';
 import styles from './Menu.module.scss';
 import Ordination from './Ordination';
 import Search from './Search';
@@ -26,6 +27,7 @@ export default function Menu() {
           <Filters filter={filter} setFilter={setFilter} />
           <Ordination ordination={ordination} setOrdination={setOrdination} />
         </div>
+        <Items />
       </section>
     </main>
   )
